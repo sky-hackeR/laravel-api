@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services\V1;
+namespace App\Filters\V1;
 
 use Illuminate\Http\Request;
 
@@ -13,7 +13,7 @@ class CustomerQuery {
         'address'=> ['eq'],
         'city'=> ['eq'],
         'state'=> ['eq'],
-        'postalCode' => ['eq', 'gt', 'lt']
+        'postalCode' => ['eq', 'gt', 'lt', 'gte', 'lte']
     ];
 
     protected $columnMap = [
